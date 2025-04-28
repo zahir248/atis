@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'KLCCC | HOMEPAGE')
+
 @section('content')
 <div class="container-fluid p-0">
 

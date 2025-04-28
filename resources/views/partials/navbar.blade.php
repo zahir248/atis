@@ -28,7 +28,7 @@
                     <a class="nav-link text-white mx-2 {{ $activePage == 'media' ? 'active fw-bold' : '' }}" href="#">Media Room</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white mx-2 {{ $activePage == 'contact' ? 'active fw-bold' : '' }}" href="#">Contact Us</a>
+                    <a class="nav-link text-white mx-2 {{ $activePage == 'contact' ? 'active fw-bold' : '' }}" href="/atis/public/contact">Contact Us</a>
                 </li>
             </ul>
             
