@@ -1,8 +1,8 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background: url('{{ asset('images/pattern-bg.png') }} ') repeat; background-color: #383B97;">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: url('{{ asset('images/home/pattern-bg.png') }} ') repeat; background-color: #383B97;">
     <div class="container">
         <a class="navbar-brand" href="/atis/public">
-            <img src="{{ asset('images/logo.png') }}" alt="Logo" height=40>
+            <img src="{{ asset('images/home/logo.png') }}" alt="Logo" height=40>
         </a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

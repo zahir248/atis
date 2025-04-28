@@ -88,7 +88,7 @@
             @foreach ($services as $service)
                 <div class="col-6 col-md-3">
                     <div class="card" style="border: none;">
-                    <img src="{{ asset('images/' . $service['image']) }}" class="card-img-top" alt="{{ $service['title'] }}">
+                    <img src="{{ asset('images/home/' . $service['image']) }}" class="card-img-top" alt="{{ $service['title'] }}">
                     <div class="card-body p-2">
                             <!-- Display the service name -->
                             <p class="card-text small mb-0">{{ $service['title'] }}</p>

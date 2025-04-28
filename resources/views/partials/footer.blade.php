@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="text-white py-4" style="background: url('{{ asset('images/pattern-bg.png') }}') repeat; background-color: #383B97;">
+<footer class="text-white py-4" style="background: url('{{ asset('images/home/pattern-bg.png') }}') repeat; background-color: #383B97;">
     <div class="container">
         <div class="row">
             <!-- Contact Us Section -->
