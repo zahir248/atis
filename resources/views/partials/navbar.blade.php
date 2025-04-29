@@ -48,7 +48,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="linksDropdown">
                     <li>
-                    <a class="dropdown-item d-flex justify-content-between align-items-center {{ $activePage == 'public-transportation' ? 'active' : '' }}" href="/atis/public/links/public-transportation">
+                    <a class="dropdown-item d-flex justify-content-between align-items-center {{ $activePage == 'public-transportation' ? 'active' : '' }}">
                         Public Transportation
                         <i class="fas fa-chevron-down ms-2 position-relative" style="top: 2px; font-size: 0.8rem;"></i>
                     </a>
