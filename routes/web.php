@@ -19,9 +19,9 @@ Route::get('/media-room', function () {
 });
 
 Route::get('/factsheets', function () {
-    return view('factsheets');
+    return view('about-us/factsheets');
 });
 
 Route::get('/organisation-charts', function () {
-    return view('organisation-charts');
+    return view('about-us/organisation-charts');
 });
