@@ -33,11 +33,11 @@
                         Our Services
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <li><a class="dropdown-item {{ $activePage == 'announcement' ? 'active' : '' }}" href="/atis/public/services/announcement">Announcement</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'cctv-feeds' ? 'active' : '' }}" href="/atis/public/services/cctv-feeds">CCTV Feeds</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'emergency-response' ? 'active' : '' }}" href="/atis/public/services/emergency-response">Emergency Response</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'journey-planner' ? 'active' : '' }}" href="/atis/public/services/journey-planner">Journey Planner</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'traffic-lights' ? 'active' : '' }}" href="/atis/public/services/traffic-lights">Traffic Lights Management</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'announcement' ? 'active' : '' }}" href="/atis/public/announcement">Announcement</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'cctv-feeds' ? 'active' : '' }}" href="/atis/public/cctv-feeds">CCTV Feeds</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'emergency-response' ? 'active' : '' }}" href="/atis/public/emergency-response">Emergency Response</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'journey-planner' ? 'active' : '' }}" href="/atis/public/journey-planner">Journey Planner</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'traffic-lights' ? 'active' : '' }}" href="/atis/public/traffic-lights">Traffic Lights Monitoring</a></li>
                     </ul>
                 </li>
                 
