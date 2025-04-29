@@ -17,3 +17,11 @@ Route::get('/contact', function () {
 Route::get('/media-room', function () {
     return view('media-room');
 });
+
+Route::get('/factsheets', function () {
+    return view('factsheets');
+});
+
+Route::get('/organisation-charts', function () {
+    return view('organisation-charts');
+});

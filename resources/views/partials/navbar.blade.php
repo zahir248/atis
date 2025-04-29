@@ -15,15 +15,55 @@
                 <li class="nav-item">
                     <a class="nav-link text-white mx-2 {{ $activePage == 'home' ? 'active fw-bold' : '' }}" href="/atis/public">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white mx-2 {{ $activePage == 'about' ? 'active fw-bold' : '' }}" href="#">About Us</a>
+                
+                <!-- About Us dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white mx-2 dropdown-toggle {{ $activePage == 'about' || $activePage == 'factsheets' || $activePage == 'organisation-charts' ? 'active fw-bold' : '' }}" href="#" id="aboutDropdown" role="button" aria-expanded="false">
+                        About Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item {{ $activePage == 'factsheets' ? 'active' : '' }}" href="/atis/public/factsheets">Factsheets</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'organisation-charts' ? 'active' : '' }}" href="/atis/public/organisation-charts">Organisation Charts</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white mx-2 {{ $activePage == 'services' ? 'active fw-bold' : '' }}" href="#">Our Services</a>
+                
+                <!-- Our Services dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white mx-2 dropdown-toggle {{ $activePage == 'services' || $activePage == 'announcement' || $activePage == 'cctv-feeds' || $activePage == 'emergency-response' || $activePage == 'journey-planner' || $activePage == 'traffic-lights' ? 'active fw-bold' : '' }}" href="#" id="servicesDropdown" role="button" aria-expanded="false">
+                        Our Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item {{ $activePage == 'announcement' ? 'active' : '' }}" href="/atis/public/services/announcement">Announcement</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'cctv-feeds' ? 'active' : '' }}" href="/atis/public/services/cctv-feeds">CCTV Feeds</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'emergency-response' ? 'active' : '' }}" href="/atis/public/services/emergency-response">Emergency Response</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'journey-planner' ? 'active' : '' }}" href="/atis/public/services/journey-planner">Journey Planner</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'traffic-lights' ? 'active' : '' }}" href="/atis/public/services/traffic-lights">Traffic Lights Management</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white mx-2 {{ $activePage == 'links' ? 'active fw-bold' : '' }}" href="#">Useful Links</a>
+                
+                <!-- Useful Links dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link text-white mx-2 dropdown-toggle {{ $activePage == 'links' || $activePage == 'public-transportation' ? 'active fw-bold' : '' }}" href="#" id="linksDropdown" role="button" aria-expanded="false">
+                        Useful Links
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="linksDropdown">
+                    <li>
+                    <a class="dropdown-item d-flex justify-content-between align-items-center {{ $activePage == 'public-transportation' ? 'active' : '' }}" href="/atis/public/links/public-transportation">
+                        Public Transportation
+                        <i class="fas fa-chevron-down ms-2 position-relative" style="top: 2px; font-size: 0.8rem;"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                        <li><a class="dropdown-item {{ $activePage == 'mrt' ? 'active' : '' }}" href="/atis/public/links/public-transportation/mrt">MRT</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'lrt' ? 'active' : '' }}" href="/atis/public/links/public-transportation/lrt">LRT</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'bas' ? 'active' : '' }}" href="/atis/public/links/public-transportation/bas">BAS</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'ktm' ? 'active' : '' }}" href="/atis/public/links/public-transportation/ktm">KTM</a></li>
+                        <li><a class="dropdown-item {{ $activePage == 'erl' ? 'active' : '' }}" href="/atis/public/links/public-transportation/erl">ERL</a></li>
+                    </ul>
                 </li>
+
+                    </ul>
+                </li>
+                
                 <li class="nav-item">
                     <a class="nav-link text-white mx-2 {{ $activePage == 'media-room' ? 'active fw-bold' : '' }}" href="/atis/public/media-room">Media Room</a>
                 </li>
@@ -43,3 +83,129 @@
         </div>
     </div>
 </nav>
+
+<!-- Make sure Bootstrap JS is included for dropdown functionality -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom CSS and JS for hover dropdown -->
+<style>
+    /* Style the dropdown to match your design */
+    .dropdown-menu {
+        background-color: #f8f9fa;
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin-top: 0;
+    }
+    
+    .dropdown-item {
+        padding: 0.5rem 1.5rem;
+        color: #383B97;
+    }
+    
+    .dropdown-item:hover, .dropdown-item:focus {
+        background-color: #e9ecef;
+        color: #383B97;
+    }
+    
+    .dropdown-item.active {
+        background-color: #383B97;
+        color: white;
+    }
+    
+    /* Support for hover functionality on larger screens */
+    @media (min-width: 992px) {
+        .navbar .dropdown:hover > .dropdown-menu {
+            display: block;
+        }
+        
+        /* For submenu (nested dropdowns) */
+        .dropdown-submenu {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: none;
+        }
+        
+        .dropdown-menu > li:hover > .dropdown-submenu {
+            display: block;
+        }
+    }
+    
+    /* Ensure submenu is positioned properly on mobile */
+    @media (max-width: 991.98px) {
+        .dropdown-submenu {
+            margin-left: 1rem;
+        }
+    }
+</style>
+
+<script>
+    // Add extra support for hover functionality
+    document.addEventListener("DOMContentLoaded", function() {
+        // For desktop
+        const dropdownItems = document.querySelectorAll('.navbar .dropdown');
+        
+        dropdownItems.forEach(function(item) {
+            item.addEventListener('mouseenter', function() {
+                if (window.innerWidth >= 992) {
+                    const dropdownMenu = this.querySelector('.dropdown-menu');
+                    if (dropdownMenu) {
+                        dropdownMenu.classList.add('show');
+                    }
+                }
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                if (window.innerWidth >= 992) {
+                    const dropdownMenu = this.querySelector('.dropdown-menu');
+                    if (dropdownMenu) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                }
+            });
+        });
+        
+        // Keep click functionality for mobile
+        const dropdownToggleItems = document.querySelectorAll('.dropdown-toggle');
+        
+        dropdownToggleItems.forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                if (window.innerWidth < 992) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const parent = this.parentElement;
+                    const dropdownMenu = parent.querySelector('.dropdown-menu');
+                    
+                    if (dropdownMenu) {
+                        dropdownMenu.classList.toggle('show');
+                    }
+                }
+            });
+        });
+        
+        // For submenu items on mobile
+        const dropdownItems2 = document.querySelectorAll('.dropdown-menu > li > a');
+        
+        dropdownItems2.forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                if (window.innerWidth < 992) {
+                    const nextEl = this.nextElementSibling;
+                    if (nextEl && nextEl.classList.contains('dropdown-submenu')) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        
+                        if (nextEl.style.display == 'block') {
+                            nextEl.style.display = 'none';
+                        } else {
+                            nextEl.style.display = 'block';
+                        }
+                    }
+                }
+            });
+        });
+    });
+</script>
