@@ -53,11 +53,11 @@
                         <i class="fas fa-chevron-down ms-2 position-relative" style="top: 2px; font-size: 0.8rem;"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-submenu">
-                        <li><a class="dropdown-item {{ $activePage == 'mrt' ? 'active' : '' }}" href="/atis/public/links/public-transportation/mrt">MRT</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'lrt' ? 'active' : '' }}" href="/atis/public/links/public-transportation/lrt">LRT</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'bas' ? 'active' : '' }}" href="/atis/public/links/public-transportation/bas">BAS</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'ktm' ? 'active' : '' }}" href="/atis/public/links/public-transportation/ktm">KTM</a></li>
-                        <li><a class="dropdown-item {{ $activePage == 'erl' ? 'active' : '' }}" href="/atis/public/links/public-transportation/erl">ERL</a></li>
+                        <li><a class="dropdown-item" href="https://myrapid.com.my/bus-train/rapid-kl/lrt/" target="_blank">MRT</a></li>
+                        <li><a class="dropdown-item" href="https://myrapid.com.my/bus-train/rapid-kl/lrt/" target="_blank">LRT</a></li>
+                        <li><a class="dropdown-item" href="https://myrapid.com.my/bus-train/rapid-kl/bus/" target="_blank">BAS</a></li>
+                        <li><a class="dropdown-item" href="https://www.ktmb.com.my/" target="_blank">KTM</a></li>
+                        <li><a class="dropdown-item" href="https://www.kliaekspres.com/" target="_blank">ERL</a></li>
                     </ul>
                 </li>
 
