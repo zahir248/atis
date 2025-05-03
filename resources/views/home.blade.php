@@ -114,11 +114,11 @@
     </div>
 
     <!-- About Us -->
-    <div class="container mb-4 mt-4">
+    <!-- <div class="container mb-4 mt-4">
         <h4 class="mb-3">About Us</h4>
-        <div class="row g-3">
+        <div class="row g-3"> -->
             <!-- Factsheets Card -->
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <div class="card border rounded p-3">
                     <div class="d-flex align-items-center">
                         <div class="me-3">
@@ -130,10 +130,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <!-- Organisation Chart Card -->
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
                 <div class="card border rounded p-3">
                     <div class="d-flex align-items-center">
                         <div class="me-3">
@@ -146,8 +146,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
 
 </div>
 

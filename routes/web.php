@@ -41,3 +41,10 @@ Route::get('/traffic-lights', function () {
 Route::get('/emergency-response', function () {
     return view('our-services/emergency-response');
 });
+
+// cctv feeds
+
+Route::get('/cctv-feeds', function () {
+    return view('our-services/cctv-feeds');
+});
+
