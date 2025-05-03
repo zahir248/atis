@@ -21,24 +21,24 @@
                 <div class="d-flex flex-column gap-4">
                     <!-- Traffic Light Image -->
                     <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/traffic-lights-monitoring/traffic1.png') }}" alt="Traffic Light" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+                        <img src="{{ asset('images/traffic-lights-monitoring/traffic1.png') }}" alt="Traffic Light" class="img-fluid w-100" style="height: 200px; object-fit: cover; border-radius: 15px">
                     </div>
                     
                     <!-- Control Room Image -->
                     <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/traffic-lights-monitoring/traffic2.png') }}" alt="Control Room" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+                        <img src="{{ asset('images/traffic-lights-monitoring/traffic2.png') }}" alt="Control Room" class="img-fluid w-100" style="height: 200px; object-fit: cover; border-radius: 15px">
                     </div>
                     
                     <!-- Traffic Management Image -->
                     <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/traffic-lights-monitoring/traffic3.png') }}" alt="Traffic Management" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+                        <img src="{{ asset('images/traffic-lights-monitoring/traffic3.png') }}" alt="Traffic Management" class="img-fluid w-100" style="height: 200px; object-fit: cover; border-radius: 15px">
                     </div>
                 </div>
             </div>
 
             <!-- Right side with information -->
             <div class="col-lg-8">
-                <div class="bg-primary text-white p-4 rounded h-100">
+                <div class="bg-primary text-white p-4 h-100" style="border-radius: 15px">
                     <h4 class="mb-4">Two types of control system:</h4>
                     <ul class="list-unstyled">
                         <li class="mb-2">• SCATS (Sydney Coordinated Adaptive Traffic System)</li>

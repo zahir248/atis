@@ -17,7 +17,7 @@
         <div class="row g-4">
             <!-- Left Column -->
             <div class="col-lg-5">
-                <div class="bg-white rounded shadow p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="bg-white shadow p-3 h-100 d-flex flex-column align-items-center justify-content-center" style="border-radius: 15px">
                     <!-- Single Image (Factsheet) -->
                     <img src="images/factsheet/factsheets.png" alt="Factsheet" class="img-fluid rounded" style="max-width: 100%;">
                 </div>
@@ -25,7 +25,7 @@
 
             <!-- Right Column -->
             <div class="col-lg-7">
-            <div class="text-white rounded shadow p-4 h-100" style="min-height: 400px; background-color: #383B97;">
+            <div class="text-white shadow p-4 h-100" style="min-height: 400px; background-color: #383B97; border-radius: 15px">
                     <p>
                         The right-hand of Traffic Management Centre (TMC) is Kuala Lumpur Command & Control Centre (KLCCC) which serves as traffic management hub to process and spread or distribute the latest updates of traffic data. KLCCC plays a role to manage, monitor, collect and disseminate the up-to-date traffic information from times to times to citizens via DBKL's strategic partner which are Jabatan Siasatan Penguatkuasaan Trafik Kuala Lumpur (JSPTKL), Malaysian Highway Authority (MHA), and radio station to share the information and logistic.
                     </p>

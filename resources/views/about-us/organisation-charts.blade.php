@@ -17,7 +17,7 @@
     <div class="container mb-5">
         <div class="row g-4">
             <div class="col-lg-12">
-                <div class="bg-white rounded shadow p-3 h-100 d-flex flex-column align-items-center justify-content-center">
+                <div class="bg-white shadow p-3 h-100 d-flex flex-column align-items-center justify-content-center" style="border-radius: 15px">
                     <img src="images/factsheet/organisation-chart.png" alt="Factsheet" class="img-fluid rounded" style="max-width: 100%;">
                 </div>
             </div>

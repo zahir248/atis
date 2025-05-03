@@ -6,7 +6,7 @@
 <div class="container-fluid p-0">
 
     <div class="container mb-4 mt-4">
-        <div class="bg-light position-relative" style="background: url('https://images.pexels.com/photos/67559/kuala-lumpur-petronas-twin-towers-malaysia-klcc-67559.jpeg?cs=srgb&dl=pexels-pixabay-67559.jpg&fm=jpg') center/cover; min-height: 400px; border-radius: 15px; overflow: hidden;">
+        <div class="bg-light position-relative" style="background: url('https://images.pexels.com/photos/313032/pexels-photo-313032.jpeg?cs=srgb&dl=pexels-indragunawan-313032.jpg&fm=jpg') center/cover; min-height: 400px; border-radius: 15px; overflow: hidden;">
             <!-- Overlay to ensure text is readable (optional) -->
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"></div>
             

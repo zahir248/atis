@@ -105,7 +105,7 @@
     <div class="container mb-4 mt-4">
         <h4 class="mb-3">Media Room</h4>
         <div class="bg-light text-start py-4 d-flex flex-column justify-content text-white"
-            style="background: url('https://www.bernama.com/storage/photos/4d52c148fa6b77af6be428bb1a045de86582ad0990771') center/cover; min-height: 400px; padding: 40px; border-radius: 15px;">
+            style="background: url('https://www.mbjb.gov.my/sites/default/files/inline-images/dbkl14.png') center/cover; min-height: 400px; padding: 40px; border-radius: 15px;">
             
             <h5 class="mb-3 fw-bold">Lawatan dari Majlis Bandaraya Johor Bahru</h5>
             <p class="mb-1 fw-bold">21.5.2024</p>

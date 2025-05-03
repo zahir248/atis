@@ -21,24 +21,24 @@
                 <div class="d-flex flex-column gap-4">
                     <!-- Traffic Light Image -->
                     <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/emergency-response/response1.jpeg') }}" alt="Traffic Light" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+                        <img src="{{ asset('images/emergency-response/response1.jpeg') }}" alt="Traffic Light" class="img-fluid w-100" style="height: 200px; object-fit: cover; border-radius: 15px">
                     </div>
                     
                     <!-- Control Room Image -->
                     <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/emergency-response/response2.png') }}" alt="Control Room" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+                        <img src="{{ asset('images/emergency-response/response2.png') }}" alt="Control Room" class="img-fluid w-100" style="height: 200px; object-fit: cover; border-radius: 15px">
                     </div>
                     
                     <!-- Traffic Management Image -->
                     <div class="rounded overflow-hidden">
-                        <img src="{{ asset('images/emergency-response/response3.png') }}" alt="Traffic Management" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+                        <img src="{{ asset('images/emergency-response/response3.png') }}" alt="Traffic Management" class="img-fluid w-100" style="height: 200px; object-fit: cover; border-radius: 15px">
                     </div>
                 </div>
             </div>
 
             <!-- Right side with information -->
             <div class="col-lg-8">
-                <div class="bg-primary text-white p-4 rounded h-100">
+                <div class="bg-primary text-white p-4 h-100" style="border-radius: 15px">
                     <h4 class="mb-4">Objectives</h4>
                     <ul class="list-unstyled">
                         <li class="mb-2">• Ensuring incidents that obstruct traffic flow do not cause prolonged traffic congestion (accidents, vehicle breakdowns, flash floods, fallen trees and others).</li>
