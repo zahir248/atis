@@ -54,7 +54,11 @@
             @endphp
             @foreach($cctvs as $cctv)
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card" style="border: none;">
+                <div class="card cctv-card" style="border: none; cursor: pointer;"
+                     data-bs-toggle="modal"
+                     data-bs-target="#cctvModal"
+                     data-cctv-name="{{ $cctv['name'] }}"
+                     data-cctv-img="{{ $cctv['img'] }}">
                     <img src="{{ $cctv['img'] }}" class="card-img-top" alt="{{ $cctv['name'] }}" style="border-radius: 15px;">
                     <div class="card-body p-2">
                         <h6 class="card-text small mb-0">{{ $cctv['name'] }}</h6>
@@ -65,4 +69,33 @@
         </div>
     </div>
 </div>
+
+<!-- CCTV Modal -->
+<div class="modal fade" id="cctvModal" tabindex="-1" aria-labelledby="cctvModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cctvModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="cctvModalImg" src="" alt="" class="img-fluid rounded" style="max-height: 400px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var cctvModal = document.getElementById('cctvModal');
+    cctvModal.addEventListener('show.bs.modal', function (event) {
+        var card = event.relatedTarget;
+        var name = card.getAttribute('data-cctv-name');
+        var img = card.getAttribute('data-cctv-img');
+        document.getElementById('cctvModalLabel').textContent = name;
+        document.getElementById('cctvModalImg').src = img;
+        document.getElementById('cctvModalImg').alt = name;
+    });
+});
+</script>
 @endsection
