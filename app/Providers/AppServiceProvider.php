@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // Share variables with all views
-        View::composer('partials.navbar', function ($view) {
+        View::composer('*', function ($view) {
             $view->with([
                 'activePage' => request()->segment(1) ?: 'home',
                 'lang' => session('language', 'en')
