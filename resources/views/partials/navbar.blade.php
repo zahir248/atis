@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background: url('{{ asset('images/home/pattern-bg.png') }} ') repeat; background-color: #383B97;">
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark" style="background: url('{{ asset('images/home/pattern-bg.png') }} ') repeat; background-color: #383B97;">
     <div class="container">
         <a class="navbar-brand" href="/atis/public">
             <img src="{{ asset('images/home/logo.png') }}" alt="Logo" height=40>
